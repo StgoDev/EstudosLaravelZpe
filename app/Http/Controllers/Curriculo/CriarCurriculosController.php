@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Curriculo;
 use App\Http\Controllers\Controller;
 use App\Models\Curriculo\Curriculo;
 use Exception;
+use App\Http\Requests\Curriculo\CriarCurriculoRequest;
 use Illuminate\Http\Request;
 use PhpParser\Node\Stmt\TryCatch;
 
@@ -20,7 +21,7 @@ class CriarCurriculosController extends Controller
     /**
      * Handle the incoming request.
      */
-    public function __invoke(Request $request)
+    public function __invoke(CriarCurriculoRequest $request)
     {
         try {
             //code...
